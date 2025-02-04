@@ -3,6 +3,8 @@ using UnityEngine;
 public class Sword : MonoBehaviour
 {
     Animator ani;
+    [SerializeField] public int damage = 10;
+    [SerializeField] public float critChance = 0.1f;
     void Start()
     {
         ani = GetComponent<Animator>();
@@ -20,5 +22,15 @@ public class Sword : MonoBehaviour
     public void StopAttacking()
     {
         ani.SetBool("isAttacking", false);
+    }
+
+    public int DealDamage()
+    {
+        if(Random.Range(0,1.1f) > critChance)
+        {
+
+        }
+
+        return damage;
     }
 }
