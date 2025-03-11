@@ -5,7 +5,6 @@ public class Respawn : MonoBehaviour
     Transform player;
     static GameObject startPos;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         if (startPos == null)
@@ -29,9 +28,4 @@ public class Respawn : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
